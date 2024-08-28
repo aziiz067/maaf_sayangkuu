@@ -14,11 +14,21 @@
 
 
 	<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        
         .gambar-9-16 {
-            width: 100%; /* Sesuaikan lebar sesuai container */
-            height: auto; /* Tinggi otomatis sesuai rasio */
-            max-height: calc(100vw * (16 / 9)); /* Mengatur tinggi maksimum agar sesuai dengan rasio 9:16 */
-            object-fit: cover; /* Sesuaikan gambar dalam container */
+            width: 100vw; /* Lebar gambar mengikuti lebar viewport */
+            height: calc(100vw * (16 / 9)); /* Tinggi gambar sesuai rasio 9:16 */
+            position: absolute; /* Membuat gambar berada di posisi tetap */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Mengatur agar gambar berada di tengah layar */
+            object-fit: cover; /* Menyesuaikan gambar agar selalu menutupi area */
         }
 	</style>
   
@@ -43,7 +53,7 @@
    <audio src="https://feeldreams.github.io/audio/seandainya.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
-	   <img src="g4.jpg" class="gambar-9-16" id="wallpaper"/> 
+	   <img src="g4.jpg" alt="Gambar Full Screen 9:16" class="gambar-9-16" id="wallpaper"/> 
    </div>
    
    <div id='Content'>
@@ -67,9 +77,9 @@
      </div>
      
      <div class="kumpulanwp" class="sembunyi">
-     	<img src="IMG_20240828_153027.jpg" class="gambar-9-16" id="wallpaper2"/>
-         <img src="IMG_20240828_153027.jpg" class="gambar-9-16" id="wallpaper3"/>
-         <img src="IMG_20240828_153058.jpg" class="gambar-9-16" id="wallpaper4"/>
+     	<img src="IMG_20240828_153027.jpg" alt="Gambar Full Screen 9:16" class="gambar-9-16" id="wallpaper2"/>
+         <img src="g1.jpg" alt="Gambar Full Screen 9:16" class="gambar-9-16" id="wallpaper3"/>
+         <img src="IMG_20240828_153058.jpg" alt="Gambar Full Screen 9:16" class="gambar-9-16" id="wallpaper4"/>
      </div>
      
      <div><div id='pergeseran'>
