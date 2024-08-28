@@ -1,1 +1,0 @@
-# maaf_sayangkuu
